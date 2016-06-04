@@ -41,4 +41,20 @@ class PagesTest extends PHPUnit_Framework_TestCase
 
     }
 
+    public function testReturnArrayReturnsInteger() {
+
+         $pages = new \Controllers\Core\Web\Pages();
+         $array_values = array(1,5,6,7,'1');
+         $expected = 20;
+         $this->assertTrue(($expected, $pages->sumArray()));
+    }
+
+    public function testReturnArrayReturnsZeroForString() {
+
+         $pages = new \Controllers\Core\Web\Pages();
+         $array_values = array('a','b',3);
+         $expected = 3;
+         $this->assertTrue(($expected, $pages->sumArray()));
+    }
+
 }

@@ -16,5 +16,9 @@ $pages = new \Controllers\Core\Web\Pages();
 
 <pre><?php var_dump($pages->returnArray());?></pre>
 
+<pre><?php echo ($pages->sumArray(array(1,4,5,5,'B','A','U'))); ?> </pre>
+
+
+
 </body>
 </html>
