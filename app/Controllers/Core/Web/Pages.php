@@ -28,7 +28,7 @@ class Pages
    
     public function sumArray($arr_values){    	
     	
-    	$local_array =  array_filter($array_values, function ($value){
+    	$local_array =  array_filter($arr_values, function ($value){
     		return is_int($value) ? $value : 0; 
     	 } );
     	return   array_sum($local_array); 
