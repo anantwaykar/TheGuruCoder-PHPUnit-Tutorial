@@ -46,7 +46,7 @@ class PagesTest extends PHPUnit_Framework_TestCase
          $pages = new \Controllers\Core\Web\Pages();
          $array_values = array(1,5,6,7,'1');
          $expected = 20;
-         $this->assertEquals($expected, $pages->sumArray());
+         $this->assertEquals($expected, $pages->sumArray($array_values));
     }
 
     public function testReturnArrayReturnsZeroForString() {
@@ -54,7 +54,7 @@ class PagesTest extends PHPUnit_Framework_TestCase
          $pages = new \Controllers\Core\Web\Pages();
          $array_values = array('a','b',3);
          $expected = 3;
-         $this->assertEquals($expected, $pages->sumArray());
+         $this->assertEquals($expected, $pages->sumArray($array_values));
     }
 
 }
