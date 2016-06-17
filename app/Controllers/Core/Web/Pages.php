@@ -31,7 +31,7 @@ class Pages
     	$local_array =  array_filter($array_values, function ($value){
     		return is_int($value) ? $value : 0; 
     	 } );
-    	return   array_sum($arr_values); 
+    	return   array_sum($local_array); 
     	
     }
 	
